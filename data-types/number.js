@@ -1,6 +1,12 @@
 /*
 NUMBERS
 
+KINTAMUJU INICIAVIMAS:
+- const (default)
+- let (kai informacija turi buti kintama)
+- var (niekada nenaudoti, nebent zinai ka darai 👀)
+
+SKAICIU KATEGORIJOS:
 - normalus
     - teigiami/neigiami
     - sveikieji/desimtainiai
@@ -12,6 +18,7 @@ OPERATORIAI:
 - priskyrimo (=)
 - matematiniai:
     - aritmetiniai: +, -, /, *, % (liekana), ** (kelimas laipsniu)
+    - aritmetiniai priskyrimo: +=, -=, /=, *=, %=, **=
 
 */
 
@@ -91,3 +98,95 @@ console.log(du2, 2 * 2);
 console.log(du3, 2 * 2 * 2);
 console.log(du4, 2 * 2 * 2 * 2);
 
+console.clear();
+
+console.log(28 / 5);
+console.log(28 % 5);
+
+console.log(9 / 3);
+console.log(9 % 3);
+
+// Pirmadienis = 1, 8, 15
+// Antradienis = 2, 9, 16
+// ...
+// Sekmadienis = 7, 14
+
+const diena = 20;
+const savaitesDiena = diena % 7;
+
+console.log(diena, savaitesDiena);
+
+console.clear();
+
+const valandos = 20;
+
+// naktis = 0; diena = 1;
+const dienaArNaktis = (valandos - (valandos % 12)) / 12;
+console.log(dienaArNaktis);
+
+// 2+2*2 = 6
+// 2+2*2 = 8
+
+console.log(2 + 2 * 2);
+console.log((2 + 2) * 2);
+
+console.log(2 + 2 * 2 ** 2);
+// console.log(2 + 2 * 4);
+// console.log(2 + 8);
+// console.log(10);
+
+console.log(45214 / 0);
+console.log(-45214 / 0);
+console.log(45214 * 0);
+console.log(-45214 * 0);
+
+console.clear();
+
+let pinigine = 10;
+console.log(pinigine);
+
+pinigine = pinigine + 5;
+console.log(pinigine);
+
+pinigine = pinigine + 8;
+console.log(pinigine);
+
+pinigine = pinigine - 7;
+console.log(pinigine);
+
+console.log('-----------------');
+
+let money = 10;
+console.log(money);
+
+money += 5;
+console.log(money);
+
+money += 8;
+console.log(money);
+
+money -= 7;
+console.log(money);
+
+console.clear();
+
+let k = 10;
+console.log(k);
+
+k += 8;
+console.log(k);
+
+k *= 2;
+console.log(k);
+
+k /= 4;
+console.log(k);
+
+k %= 7;
+console.log(k);
+
+k -= 7;
+console.log(k);
+
+k **= 2;
+console.log(k);

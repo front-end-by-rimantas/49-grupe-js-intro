@@ -76,3 +76,52 @@ const n2 = 55;
 // 7 + 5 = 12;
 const pliusas = `${n1} + ${n2} = ${n1 + n2};`;
 console.log(pliusas);
+
+console.clear();
+
+// Stai sarasas:
+// - pirmas
+// - antras
+// - trecias
+
+// \r - return
+// \n - new line
+// \t - tab
+
+const eilutes = 'Stai sarasas:\r\n\
+- pirmas\r\n\
+- antras\r\n\
+- trecias';
+
+console.log(eilutes);
+
+/*
+<header>
+    <img src="#" alt="">
+    <nav>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </nav>
+</header>
+*/
+
+const HTML = '<header>\r\n\
+\t<img src="#" alt="">\r\n\
+\t<nav>\r\n\
+\t\t<a href="#">Link</a>\r\n\
+\t\t<a href="#">Link</a>\r\n\
+\t\t<a href="#">Link</a>\r\n\
+\t</nav>\r\n\
+</header>';
+console.log(HTML);
+
+const HTML2 = `<header>
+    <img src="#" alt="">
+    <nav>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </nav>
+</header>`;
+console.log(HTML2);

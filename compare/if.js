@@ -95,3 +95,49 @@ if ('4' === 2) {
 } else {
     console.log('ne');
 }
+
+console.clear();
+
+// Code nesting
+
+const diena = 25;
+// Iki 11val - pusryciu meniu
+// Iki 16val - dienos meniu
+// Po 16val - vakaro meniu
+const laikas = 20;
+
+if (diena === 1) {
+    if (laikas < 11) {
+        console.log('Pirmos menesio dienos meniu: rytas');
+    } else if (laikas < 16) {
+        console.log('Pirmos menesio dienos meniu: diena');
+    } else {
+        console.log('Pirmos menesio dienos meniu: vakaras');
+    }
+} else if (diena === 24 || diena === 25) {
+    console.log('Kaledinis meniu');
+} else {
+    if (laikas < 11) {
+        console.log('Standartinis meniu: rytas');
+    } else if (laikas < 16) {
+        console.log('Standartinis meniu: diena');
+    } else {
+        console.log('Standartinis meniu: vakaras');
+    }
+}
+
+if (diena === 24 || diena === 25) {
+    console.log('Kaledinis meniu');
+} else if (diena === 1 && laikas < 11) {
+    console.log('Pirmos menesio dienos meniu: rytas');
+} else if (diena === 1 && laikas < 16) {
+    console.log('Pirmos menesio dienos meniu: diena');
+} else if (diena === 1) {
+    console.log('Pirmos menesio dienos meniu: vakaras');
+} else if (diena !== 1 && laikas < 11) {
+    console.log('Standartinis meniu: rytas');
+} else if (diena !== 1 && laikas < 16) {
+    console.log('Standartinis meniu: diena');
+} else if (diena !== 1) {
+    console.log('Standartinis meniu: vakaras');
+}

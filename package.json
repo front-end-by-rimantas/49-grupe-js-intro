@@ -5,6 +5,7 @@
     "main": "index.js",
     "scripts": {
         "function": "node --watch ./functions/function.js",
+        "typeof": "node --watch ./compare/typeof.js",
         "ternary": "node --watch ./compare/ternary.js",
         "if": "node --watch ./compare/if.js",
         "boolean": "node --watch ./data-types/boolean.js",

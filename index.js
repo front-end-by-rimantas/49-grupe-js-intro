@@ -9,6 +9,7 @@ Busimos temos:
     - skaiciai
     - tekstas
     - logines reiksmes
+    - undefined
     - sąrašas
     - objektas
 - salygos (if)

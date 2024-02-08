@@ -10,7 +10,7 @@ Busimos temos:
     + tekstas
     + logines reiksmes
     + undefined
-    - sąrašas
+    + sąrašas
     - objektas
 - salygos (if)
     + if

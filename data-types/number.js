@@ -19,6 +19,7 @@ OPERATORIAI:
 - matematiniai:
     - aritmetiniai: +, -, /, *, % (liekana), ** (kelimas laipsniu)
     - aritmetiniai priskyrimo: +=, -=, /=, *=, %=, **=
+    - aritmetiniai: ++, --
 
 */
 
@@ -190,3 +191,48 @@ console.log(k);
 
 k **= 2;
 console.log(k);
+
+console.clear();
+
+let i = 0;
+console.log(i);
+
+i = i - 1;
+console.log(i);
+
+i = i - 1;
+console.log(i);
+
+i -= 1;
+console.log(i);
+
+i -= 1;
+console.log(i);
+
+i--;
+console.log(i);
+
+i--;
+console.log(i);
+
+console.clear();
+
+// dydinimas vyksta po panaudojimo (spausdinimo)
+let p = 0;
+console.log(p);
+console.log(p++);
+console.log(p++);
+console.log(p++);
+console.log(p++);
+console.log(p++);
+
+console.log('----------');
+
+// dydinimas vyksta pries panaudojima (spausdinima)
+let r = 0;
+console.log(r);
+console.log(++r);
+console.log(++r);
+console.log(++r);
+console.log(++r);
+console.log(++r);

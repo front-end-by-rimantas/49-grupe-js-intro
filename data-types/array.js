@@ -59,19 +59,28 @@ function marksAverage(marks) {
     // total += marks[i];
     // i += 1;
 
+    // let total = 0;
+    // let i = 0;
+
+    // total += marks[i];
+    // i++;
+    // total += marks[i];
+    // i++;
+    // total += marks[i];
+    // i++;
+    // total += marks[i];
+    // i++;
+    // total += marks[i];
+    // i++;
+
     let total = 0;
     let i = 0;
 
-    total += marks[i];
-    i += 1;
-    total += marks[i];
-    i += 1;
-    total += marks[i];
-    i += 1;
-    total += marks[i];
-    i += 1;
-    total += marks[i];
-    i += 1;
+    total += marks[i++];
+    total += marks[i++];
+    total += marks[i++];
+    total += marks[i++];
+    total += marks[i++];
 
     const count = marks.length;
     const result = total / count;
@@ -83,6 +92,6 @@ function marksAverage(marks) {
 }
 
 console.log(marksAverage([10, 2, 8, 4, 6]), '->', 6);
-// console.log(marksAverage([10, 10, 10, 10, 10]), '->', 10);
-// console.log(marksAverage([1, 1, 1, 1, 1]), '->', 1);
-// console.log(marksAverage([1, 2, 3, 4, 5]), '->', 3);
+console.log(marksAverage([10, 10, 10, 10, 10]), '->', 10);
+console.log(marksAverage([1, 1, 1, 1, 1]), '->', 1);
+console.log(marksAverage([1, 2, 3, 4, 5]), '->', 3);

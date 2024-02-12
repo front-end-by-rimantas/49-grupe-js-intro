@@ -11,7 +11,8 @@ Busimos temos:
     + logines reiksmes
     + undefined
     + sąrašas
-    - objektas
+    + objektas
+    - null
 - salygos (if)
     + if
     + ternary

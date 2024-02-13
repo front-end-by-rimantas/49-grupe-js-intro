@@ -123,3 +123,61 @@ console.log(vasara);
 const vasara2 = 'vasaravasaravasara'.replaceAll('a', '-');
 console.log(vasara2);
 
+console.clear();
+
+console.log('Pomidoras'.slice());
+console.log('Pomidoras'.slice(0));
+console.log('Pomidoras'.slice(1));
+console.log('Pomidoras'.slice(2));
+console.log('Pomidoras'.slice(3));
+
+//           012345678
+console.log('Pomidoras'.slice(0, 5));
+console.log('Pomidoras'.slice(1, 5));
+console.log('Pomidoras'.slice(2, 5));
+
+console.log('-----------');
+
+//           876543210-
+//          +012345678
+console.log('Pomidoras'.slice(-1));
+console.log('Pomidoras'.slice(-2));
+console.log('Pomidoras'.slice(-3));
+console.log('Pomidoras'.slice(-4));
+console.log('Pomidoras'.slice(-4, -2));
+console.log('Pomidoras'.slice(2, -2));
+
+console.clear();
+
+console.log('Pomidoras'.split());
+console.log('Pomidoras'.split('m'));
+console.log('Pomidoras'.split('i'));
+console.log('Pomidoras'.split('o'));
+
+console.log('vasara'.split('s'));
+console.log('vasara'.split('v'));
+console.log('vasara'.split('v')[0].length);
+console.log('vasara'.split('v')[1].length);
+
+console.log('vasara'.split('a'));
+console.log('vasara'.split('X'));
+console.log(''.split('a'));
+console.log(''.split(''));
+console.log('vasara'.split(''));
+
+console.clear();
+
+console.log('vasara'.toUpperCase());
+console.log('VASara'.toUpperCase());
+console.log('VASara'.toLowerCase());
+
+console.clear();
+
+console.log(`"${'vasara'.trim()}"`);
+console.log(`"${'v a s a r a'.trim()}"`);
+console.log(`"${'v  a  s  a  r  a'.trim()}"`);
+console.log(`"${'v   a   s   a   r   a'.trim()}"`);
+console.log(`"${'     vasara'.trim()}"`);
+console.log(`"${'vasara     '.trim()}"`);
+console.log(`"${'     vasara     '.trim()}"`);
+console.log(`"${'     vas     ara     '.trim()}"`);

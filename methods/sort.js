@@ -42,7 +42,11 @@ for (const student of students) {
 // Reikia rasti kiekvieno studento maziausia pazymi ir tai prideti kaip nauja studento objekto rakta (minMark).
 
 for (const student of students) {
-    const marksCopy = student.marks;
+    const marksCopy = [];
+    for (const mark of student.marks) {
+        marksCopy.push(mark);
+    }
+
     marksCopy.sort((a, b) => a - b);
     student.minMark = marksCopy[0];
 }
@@ -51,9 +55,7 @@ for (const student of students) {
 // Reikia rasti kiekvieno studento didziausia pazymi ir tai prideti kaip nauja studento objekto rakta (maxMark).
 
 for (const student of students) {
-    const marksRef = student.marks;
-    marksRef.sort((a, b) => b - a);
-    student.maxMark = marksRef[0];
+    student.maxMark = Math.max(...student.marks);
 }
 console.log(students[0]);
 

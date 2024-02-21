@@ -77,6 +77,7 @@ Savybes:
 - miega/nemiega
 
 Functionalumas:
+- prisistatymas
 - gali pakartoti pasakyta zodi
     - jeigu miega, nereaguoja
     - jeigu pasakomas daugiau nei vienas zodis, tai pakartoja tik pirma zodi

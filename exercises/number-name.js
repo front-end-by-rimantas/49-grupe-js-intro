@@ -36,24 +36,28 @@ function numberNameLoop(n) {
         'zero', 'one', 'two', 'three', 'four',
         'five', 'six', 'seven', 'eight', 'nine',
     ];
+    const result = [];
 
+    while (n / 10 > 0) {
+        result.unshift(dictionary[n % 10]);
+        n = (n - n % 10) / 10;
+    }
 
-
-    return '';
+    return result.join(' ');
 }
 
 console.log(numberNameLoop(1234567890));
 
-console.log(numberNameLoop(0), '-->', 'zero');
-console.log(numberNameLoop(1), '-->', 'one');
-console.log(numberNameLoop(9), '-->', 'nine');
+// console.log(numberNameLoop(0), '-->', 'zero');
+// console.log(numberNameLoop(1), '-->', 'one');
+// console.log(numberNameLoop(9), '-->', 'nine');
 
-console.log(numberNameLoop(19));
-console.log(numberNameLoop(37));
-console.log(numberNameLoop(58));
-console.log(numberNameLoop(24));
+// console.log(numberNameLoop(19));
+// console.log(numberNameLoop(37));
+// console.log(numberNameLoop(58));
+// console.log(numberNameLoop(24));
 
-console.log(numberNameLoop(314));
-console.log(numberNameLoop(999));
-console.log(numberNameLoop(666));
-console.log(numberNameLoop(271));
+// console.log(numberNameLoop(314));
+// console.log(numberNameLoop(999));
+// console.log(numberNameLoop(666));
+// console.log(numberNameLoop(271));

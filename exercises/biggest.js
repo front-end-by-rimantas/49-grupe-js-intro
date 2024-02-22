@@ -61,3 +61,6 @@ console.log(biggest([-1, -2, 'labas', -3, -4]), '-->', -1);
 console.log(biggest(['labas', -1, -2, -3, -4]), '-->', -1);
 
 console.log(biggest(['labas', true, biggest, {}, null, undefined]));
+
+// Rekursija
+console.log(biggest([-5, [[78], 14], 0, 18]), '-->', 78);

@@ -27,7 +27,7 @@ Busimos temos:
 - funkcijos
     + function
     + arrow function
-    - class
+    + class
 - ivykiai (event listeners)
 
 */
